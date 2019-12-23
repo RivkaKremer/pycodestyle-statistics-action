@@ -1,5 +1,5 @@
 #!/bin/sh
-set -e
+set +e
 
 if [[ -z "$GITHUB_TOKEN" ]]; then
 	echo "The GITHUB_TOKEN is required."
@@ -18,6 +18,8 @@ if [ $SUCCESS -ne 0 ]; then
 else
     echo "There were no pycodestyle issues"
 fi
+
+set -e
 
 echo -e $OUTPUT
 
