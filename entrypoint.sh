@@ -19,6 +19,6 @@ else
     echo "There were no pycodestyle issues"
 fi
 
-echo $OUTPUT
+echo -e $OUTPUT
 
 exit $SUCCESS
