@@ -1,0 +1,32 @@
+commit 591857981fed9b7676fbfe7d30953fd4c3c808f0
+Author: Rivka Kremer <rivka.k@develeap.com>
+Date:   Wed Mar 4 10:46:19 2020 +0200
+
+     test
+
+diff --git a/Dockerfile b/Dockerfile
+index a77869f..8976dfa 100644
+--- a/Dockerfile
++++ b/Dockerfile
+@@ -1,20 +1,21 @@
+ FROM python:3.7-alpine
+ 
+ LABEL name="pycodestyle-action"
+ LABEL version="1.0.0"
+ LABEL repository="http://github.com/ankitvgupta/pycodestyle-action"
+ LABEL homepage="http://github.com/ankitvgupta/pycodestyle-action"
+ 
+ LABEL maintainer="Ankit Gupta <ankit45@gmail.com>"
+ LABEL com.github.actions.name="pycodestyle-action"
+ LABEL com.github.actions.description="Run Pycodestyle on pull request"
+ LABEL com.github.actions.icon="git-pull-request"
+ LABEL com.github.actions.color="purple"
+ 
+ RUN apk add --no-cache git
+ RUN apk add bash
+ RUN pip install --upgrade pycodestyle
+ 
+ 
+ COPY "entrypoint.sh" "/entrypoint.sh" 
+ ENTRYPOINT ["/entrypoint.sh"]
++aaa
