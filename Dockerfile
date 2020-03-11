@@ -18,3 +18,6 @@ RUN pip install --upgrade pycodestyle
 
 COPY "entrypoint.sh" "/entrypoint.sh" 
 ENTRYPOINT ["/entrypoint.sh"]
+aaa
+bbb
+ccc
